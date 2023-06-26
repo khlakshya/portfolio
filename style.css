@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+#header {
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/downloadimg.png);
+    background-size: 25% 50%;
+    background-position: 85% 70%;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 65px;
+    margin-left: 0;
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: azure;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    min-height: 20px;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/*------------ABOUT-------------*/
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col {
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-col p {
+    padding: 50px 150px 30px 150px;
+    font-size: 25px;
+}
+
+.abt {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+}
+
+.abt:hover {
+    color: rgb(255, 0, 128);
+}
+
+.abt:active {
+    color: green;
+}
+
+/*------------EDUCATION-------------*/
+
+#Education {
+    padding: 80px 0;
+}
+
+.heading {
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.box-1 {
+    border: 2px grey solid;
+    border-radius: 30px;
+}
+
+.edu-col-1 {
+    flex-basis: 40%;
+}
+
+.edu-col-1 h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+}
+
+.edu-col-2 {
+    flex-basis: 55%;
+}
+
+.edu-col-2 p {
+    padding: 50px;
+    margin: 3px;
+    font-size: 30px;
+}
+
+/*------------SKILLSET-------------*/
+
+#SkillSet {
+    padding: 60px 80px;
+}
+
+.skill-box {
+    padding: 30px;
+    text-align: center;
+}
+
+.icon {
+    border-radius: 25px;
+    border-style: inline;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+/*------------PORTFOLIO-------------*/
+
+#Portfolio {
+    padding: 80px;
+}
+
+.portfolio-content-1 {
+    background-color: aquamarine;
+    border: 0.5px #ababab dotted;
+}
+
+.portfolio-content-1 .po-img1 {
+    padding: 20px;
+    float: left;
+    border: 0.5px springgreen solid;
+    box-sizing: border-box;
+}
+
+.portfolio-content-1 .po-p1 {
+    float: right;
+    padding: 20px;
+}
+
+.portfolio-content-2 {
+    background-color: aqua;
+    border: 0.5px #ababab dotted;
+}
+
+.portfolio-content-2 {
+    border: 0.5px #ababab dotted;
+}
+
+.po-img2 {
+    padding: 20px;
+    float: right;
+    border: 0.5px springgreen solid;
+    box-sizing: border-box;
+}
+
+.po-p2 {
+    float: left;
+    padding: 20px;
+}
+
+
+
+/*------------CONTACT-------------*/
+
+#Contact {
+    padding: 80px;
+}
+
+.block-1 {
+    float: left;
+    width: 45%;
+
+}
+
+.my-form {
+    padding: 40px;
+    float: right;
+    width: 60%;
+    border: 2px #333 double;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.my-form input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+}
+
+.my-form input[type="submit"]:hover {
+    background-color: rgb(255, 0, 128);
+    color: #fff;
+}
+
+.my-form input[type="submit"]:active {
+    background-color: green;
+}
+
+
+
+.fix-me-button {
+    position: static;
+    padding: 10px;
+    color: aliceblue;
+    border-right: 1px #fff solid;
+    top: 400px;
+}
